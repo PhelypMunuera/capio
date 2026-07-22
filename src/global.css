@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white : #fff;
+    --white-100: rgba(255, 255, 255, 0.3);
+    --black:  #000;
+
+    --grey-100: #bebfca;   
+    --grey-200: #9C9EB1; 
+
+    --blue-100: #8D8DAC;
+    --blue-200: #426FB6;
+    --blue-500: #35356A;
+    --blue-800: #2A2A51;
+    
+    --red-200: #FFA2A2; 
+    --green-200: #97C994; 
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    font-family: "Montserrat", sans-serif;
+    color: var(--white);
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
