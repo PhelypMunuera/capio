@@ -1,0 +1,23 @@
+
+.inputText {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    
+    border-radius: 6px;
+    border: solid 1px var(--white-100);
+
+    input{
+        width: 100%;
+        border: none;
+        padding: 0.5rem 1rem;
+        color:var(--grey-200);
+        border-radius: 6px;
+
+        &:focus{
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
