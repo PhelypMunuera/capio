@@ -10,7 +10,6 @@ export function Credentials () {
 
     return(
         <main className= {style.container}>
-             
             <section className={style.containerInfo}>
                <div>
                <h1>CAPIO</h1>

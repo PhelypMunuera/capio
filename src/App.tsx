@@ -1,4 +1,7 @@
-import { Credentials } from './Componets/Credentials'
+// import { Credentials } from './Pages' -> pagina de login
+import { Register } from './Pages/register'
+
+
 import './global.css'
 
 export function App() {
@@ -6,7 +9,7 @@ export function App() {
 
   return (
     <>
-   <Credentials/>
+    < Register />
     </>
   )
 }
