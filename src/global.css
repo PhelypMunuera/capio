@@ -1,39 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --white : #fff;
-    --white-100: rgba(255, 255, 255, 0.3);
-    --black:  #000;
+  --white: #fff;
+  --white-100: rgba(255, 255, 255, 0.3);
+  --black: #000;
 
-    --grey-100: #bebfca;   
-    --grey-200: #9C9EB1; 
-    --grey-300: #8D8DAC;
+  --grey-100: #bebfca;
+  --grey-200: #9c9eb1;
+  --grey-300: #8d8dac;
 
+  --blue-100: #d9e5f7;
+  --blue-200: #426fb6;
+  --blue-500: #35356a;
+  --blue-800: #2a2a51;
 
-    --blue-100:#d9e5f7;
-    --blue-200: #426FB6;
-    --blue-500: #35356A;
-    --blue-800: #2A2A51;
-    
-    --red-200: #FFA2A2; 
-    --green-200: #97C994; 
-
+  --red-200: #ffa2a2;
+  --green-200: #97c994;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 
-    font-family: "Montserrat", sans-serif;
-    color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+
+  background-color: var(--blue-800);
 }
 
 button {
-    border: 0;
-    cursor: pointer;
+  border: 0;
+  cursor: pointer;
+}
+
+.layoutGrid{
+display: grid;
+grid-template-rows: auto minmax(0, 1fr) auto;
 }

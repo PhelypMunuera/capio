@@ -1,13 +1,10 @@
 import style from './style.module.css'
 
-/*
 type headerProps={
     name: string
 }
 
-{name}:headerProps*/
-
-export function Header() {
+export function Header({name}:headerProps) {
      return(
       <header className={style.containerHeader}>
           <nav>
@@ -33,7 +30,7 @@ export function Header() {
             </ul>
             </nav>
             <section className={style.containerUser}>
-                <button>Phelyp Munuera</button>
+                <button>{name}</button>
                 <div className={style.divLine}></div>
                 <button><i className="ph ph-sign-out"></i></button>
             </section>

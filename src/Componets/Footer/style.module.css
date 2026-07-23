@@ -1,0 +1,15 @@
+.containerFooter{
+    background-color: var(--blue-200);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2.5rem;
+
+    width: 100vw;
+
+    p{
+        font-size: 0.875rem;
+        line-height: 3.125rem;
+        font-weight: 200;
+    }
+}

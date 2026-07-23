@@ -1,0 +1,23 @@
+.container {
+    height: calc(100vh - 15rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        div{
+            display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        }
+
+        button{
+            background-color: var(--blue-200);
+        }
+        
+    }
+}

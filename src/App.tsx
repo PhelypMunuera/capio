@@ -1,5 +1,5 @@
 // import { Credentials } from './Pages' -> pagina de login
-import { Register } from './Pages/register'
+import { Workspace } from './Pages/workspace'
 
 
 import './global.css'
@@ -9,7 +9,7 @@ export function App() {
 
   return (
     <>
-    < Register />
+    < Workspace />
     </>
   )
 }
