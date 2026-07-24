@@ -1,0 +1,45 @@
+.container {
+  height: calc(100vh - 15rem);
+
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+.registersList {
+  width: 100vw;
+  border-collapse: collapse;
+  border: none;
+  thead {
+    background-color: var(--blue-300);
+
+    th {
+      white-space: nowrap;
+      padding: 1rem 4rem;
+      text-align: left;
+      border-collapse: collapse;
+      cursor: pointer;
+
+      transition: all 0.1s linear;
+      &:hover {
+        color: var(--blue-500);
+      }
+    }
+  }
+
+  tbody {
+    background-color: var(--white);
+    
+    td {
+      color: var(--black);
+      font-size: 1.25rem;
+      padding: 1.5rem 4rem;
+      text-align: left;
+      border-bottom: 1px solid var(--grey-100);
+    }
+  }
+}

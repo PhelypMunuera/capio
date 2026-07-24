@@ -1,0 +1,19 @@
+.containerSelector{
+    background-color: var(--white);
+    border-radius: 6px;
+
+    select{
+        background-color: transparent;
+        border: none;
+        padding: 0.5rem 1rem;
+        color: var(--grey-200);
+        cursor: pointer;
+        &:focus{
+            border: none;
+            outline: none;
+            box-shadow: none;            
+        }
+    } 
+
+   
+}

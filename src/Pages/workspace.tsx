@@ -1,6 +1,8 @@
 import { Header } from "../Componets/Header";
 import { Footer } from "../Componets/Footer";
-import { Register } from "../Componets/Register";
+import { DataOfRegisters } from "../Componets/DataOfRegisters";
+
+
 
 
 export function Workspace() {
@@ -8,7 +10,7 @@ export function Workspace() {
     <div className='layoutGrid'>
       <Header name="Phelyp Munuera" />
       <main>
-        <Register />
+        <DataOfRegisters />
       </main>
       <Footer />
     </div>

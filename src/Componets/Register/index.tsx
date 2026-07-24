@@ -1,5 +1,6 @@
 import { Input } from "../Input";
 import { Button } from "../Button";
+import { Selector } from "../Selector";
 
 import style from "./style.module.css";
 
@@ -14,7 +15,7 @@ export function Register() {
             <Input placeholder={"Nome do Paciente"} />
             <Input placeholder={"Telefone para contato"} />
             <Input placeholder={"Bairro de residencia"} />
-            <Input placeholder={"Setor"} />
+            <Selector />
           </div>
           <Button />
         </form>

@@ -18,7 +18,9 @@
             outline: none;
             box-shadow: none;
         }
-    }
+    }:placeholder{
+        color:var(--grey-200);
+       }
 }
 
 
