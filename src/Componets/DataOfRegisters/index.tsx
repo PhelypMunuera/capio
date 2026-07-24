@@ -14,15 +14,35 @@ type RegistersProps = {
 
 export function DataOfRegisters() {
   const [registers, setRegisters] = useState(ListOfRegisters);
+  
+  function sortRegisters(selector: string) {
+    let sortedRegisters = [...registers];
 
-  function sortRegisters() {
-    const sortedRegisters = [...registers].sort((a, b) =>
-      a.name.localeCompare(b.name, "pt-BR"),
-    );
+    switch (selector) {
+      case "Nome do paciente atendido":
+        sortedRegisters.sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
+        setRegisters(sortedRegisters);
+        break;
 
-    setRegisters(sortedRegisters);
+      case "Documento":
+        sortedRegisters.sort((a, b) => a.document.localeCompare(b.document, "pt-BR"));
+        setRegisters(sortedRegisters);
+        break;
+
+      case "Bairro":
+        sortedRegisters.sort((a, b) => a.address.localeCompare(b.address, "pt-BR"));
+        setRegisters(sortedRegisters);
+        break;
+
+      case "Setor":
+        sortedRegisters.sort((a, b) => a.sector.localeCompare(b.sector, "pt-BR"));
+        setRegisters(sortedRegisters);
+        break;
+
+      default:
+        break;
+    }
   }
-
   return (
     <>
       <div className={style.container}>
@@ -31,7 +51,14 @@ export function DataOfRegisters() {
           <table className={style.registersList}>
             <thead>
               {FilterRegisters.map((filter) => (
-                <th onClick={sortRegisters}>{filter}</th>
+                <th
+                  onClick={() => {
+                    sortRegisters(filter);
+                  }}
+                >
+                  {filter}
+                  <i className="ph ph-caret-down"></i>
+                </th>
               ))}
             </thead>
             <tbody>
@@ -52,8 +79,4 @@ export function DataOfRegisters() {
       </div>
     </>
   );
-}
-
-{
-  /* <i className="ph ph-caret-down"></i> */
 }

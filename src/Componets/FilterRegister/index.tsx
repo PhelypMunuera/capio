@@ -1,7 +1,7 @@
 export const FilterRegisters = [
         'Data - Hora',
         'Nome do paciente atendido',
-        'Documentoa',
+        'Documento',
         'Bairro',
         'Setor'
 ]
