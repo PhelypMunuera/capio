@@ -16,7 +16,7 @@ export function DataOfRegisters() {
   const [registers, setRegisters] = useState(ListOfRegisters);
   
   function sortRegisters(selector: string) {
-    let sortedRegisters = [...registers];
+    const sortedRegisters = [...registers];
 
     switch (selector) {
       case "Nome do paciente atendido":

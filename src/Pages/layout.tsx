@@ -1,18 +1,24 @@
 import { Header } from "../Componets/Header";
 import { Footer } from "../Componets/Footer";
-import { DataOfRegisters } from "../Componets/DataOfRegisters";
+
+import { Outlet } from "react-router-dom";
 
 
 
 
-export function Workspace() {
+
+
+export function Layout()  {
   return (
     <div className='layoutGrid'>
       <Header name="Phelyp Munuera" />
       <main>
-        <DataOfRegisters />
+        <Outlet />
       </main>
       <Footer />
     </div>
   );
 }
+
+
+
