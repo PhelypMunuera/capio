@@ -1,7 +1,5 @@
 import { Input } from "../Input";
 import { Button } from "../Button";
-import { Selector } from "../Selector";
-
 import { useForm } from 'react-hook-form'
 import z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -37,7 +35,8 @@ export function SignUpEmployee() {
             <Input placeholder={"Informe a Matricula"} {...register('id')} />
             <Input placeholder={"Nome do Funcionario"} {...register('name')} />
             <Input placeholder={"Função do funcionario"} {...register('position')} />
-            <Selector />
+            <Input placeholder={"Loging de acesso"} {...register('position')} />
+            
             <InputPassword placeholder={"Digite uma senha"} {...register('password')}/>
           </div>
           <Button types={'submit'} content={'Confirmar cadastro'} />

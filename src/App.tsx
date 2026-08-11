@@ -9,6 +9,7 @@ import { SignUpEmployee } from "./Componets/SignUpEmployee";
 
 import './global.css';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,7 +42,8 @@ const router = createBrowserRouter([
     children: [
       {path: "/Cadastrar-novo-funcionario", element: <SignUpEmployee />},
     ]
-  }
+  },
+
 ]);
 
 export function App() {

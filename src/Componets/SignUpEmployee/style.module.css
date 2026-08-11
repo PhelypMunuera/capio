@@ -11,12 +11,19 @@
         gap: 5rem;
 
         div{
-            display: flex;
+        display: flex;
         flex-direction: column;
         gap: 1.25rem;
+        &:last-child{
+            flex-direction: row;
         }
-
-      
-        
+        }
+        > :last-child{
+            background-color:var(--blue-200);    
+        }
     }
+
+  
+        
+
 }
