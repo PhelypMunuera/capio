@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ListOfRegisters } from "../ListOfRegisters";
-import { FilterRegisters } from "../FilterRegister";
+import { FilterRegisters } from "../Filters";
 
 import style from "./style.module.css";
 

@@ -5,3 +5,11 @@ export const FilterRegisters = [
         'Bairro',
         'Setor'
 ]
+
+export const FilterEmployee = [
+        'Matrícula',
+        'Nome do funcionario',
+        'Loging',
+        '',
+        
+]
