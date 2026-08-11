@@ -1,4 +1,6 @@
 .containerFooter{
+    position: fixed;
+    bottom: 0;
     background-color: var(--blue-200);
     display: flex;
     justify-content: space-between;
@@ -6,6 +8,10 @@
     padding: 1.25rem 2.5rem;
 
     width: 100vw;
+    height: 15%;
+    img{
+        height: 100%;
+    }
 
     p{
         font-size: 0.875rem;

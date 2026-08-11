@@ -1,11 +1,12 @@
-import { Button } from '../Button'
-import { Form } from '../Form'
+
+import { Login } from '../Form'
 import style from './style.module.css'
 
 
 
 export function Credentials () {
 
+    
     
 
     return(
@@ -15,8 +16,8 @@ export function Credentials () {
                <h1>CAPIO</h1>
                <h3>SECRETARIA DE SAÚDE</h3>
                </div>
-               <Form />
-               <Button />
+               <Login />
+              
             </section>
         </main>
     )

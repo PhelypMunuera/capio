@@ -1,7 +1,19 @@
+import { useNavigate } from 'react-router-dom';
 import style from './style.module.css'
 
-export function Button() {
+type ButtonProps = {
+    types: "submit" | "reset" | "button";
+    content: string;
+    AttClass?: string
+    url?: string;
+    
+  };
+
+export function Button({ types, content, url }: ButtonProps) {
+
+    const navigate = useNavigate();
+   
     return(
-        <button className={style.buttonComponet}>Entrar</button>
+        <button onClick={() => (url ? navigate(url) : null)}  type={types} className={style.buttonHome}>{content}</button>
     )
 }

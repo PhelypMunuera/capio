@@ -1,26 +1,22 @@
-.container {
-    flex: 1;
-    height:70vh;
+.containerSingUp {
+    height: calc(100vh - 15rem);
     display: flex;
     justify-content: center;
     align-items: center;
-
 
     form{
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
+        gap: 5rem;
 
         div{
             display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: 1.25rem;
         }
 
-        button{
-            background-color: var(--blue-200);
-        }
+      
         
     }
 }
