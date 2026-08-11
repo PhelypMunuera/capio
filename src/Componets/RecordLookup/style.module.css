@@ -1,16 +1,16 @@
 .container {
-  height: calc(100vh - 15rem);
-  overflow-y: auto;
+  margin-bottom: 14vh;
   display: flex;
   justify-content: center;
-
+  
   h1 {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 }
 
 .registersList {
+
   width: 100vw;
   border-collapse: collapse;
   border: none;
@@ -19,7 +19,7 @@
 
     th {
       white-space: nowrap;
-      padding: 1rem 4rem;
+      padding: 1rem .5rem;
       text-align: left;
       border-collapse: collapse;
       cursor: pointer;
@@ -36,8 +36,8 @@
     
     td {
       color: var(--black);
-      font-size: 1.25rem;
-      padding: 1.5rem 4rem;
+      font-size: .75rem;
+      padding: .5rem;
       text-align: left;
       border-bottom: 1px solid var(--grey-100);
     }

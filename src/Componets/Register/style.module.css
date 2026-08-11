@@ -1,19 +1,21 @@
 .container {
-    height: calc(100vh - 15rem);
+    flex: 1;
+    height:70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 
     form{
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 5rem;
+        gap: 1rem;
 
         div{
             display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: .5rem;
         }
 
         button{

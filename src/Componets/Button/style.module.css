@@ -1,12 +1,11 @@
-
-.buttonComponet{
-    padding: 0.75rem 10rem;
+.buttonHome{
     background-color: var( --blue-800);
+    padding: 0.75rem 10rem;
     color: var(--white);
     font-size: 1rem;
     font-weight: 500;
     border-radius: 6px;
-&:active {
-    background-color: var( --blue-500);
-}
+    &:active {
+        background-color: var( --blue-500);
+    }
 }

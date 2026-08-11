@@ -2,9 +2,10 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import { CredentialsPage } from './Pages';
 import { Layout } from "./Pages/layout";
 import { Register } from "./Componets/Register";
-import { DataOfRegisters } from './Componets/DataOfRegisters';
+import { RecordLookup } from './Componets/RecordLookup';
 import { DataOfEmployee } from './Componets/DataOfEmployee';
 import { SignUpEmployee } from "./Componets/SignUpEmployee";
+
 
 import './global.css';
 
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <Layout />,
     children:[
-      {path: "/Dados-de-registros", element: <DataOfRegisters />},
+      {path: "/Lista-de-registros", element: <RecordLookup />},
     ]
   },
   {

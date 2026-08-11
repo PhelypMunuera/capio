@@ -1,26 +1,23 @@
-import { useState } from 'react'
+import type { InputHTMLAttributes } from "react";
 
 import style from './style.module.css'
 
-type checkboxProps = {
+type checkboxProps = InputHTMLAttributes<HTMLInputElement> & {
     text: string
 }
 
-export function InputCheckbox({text}:checkboxProps){
+export function InputCheckbox({ text, ...props }: checkboxProps) {
 
-const [checkboxEvent, setCheckboxEvent] = useState(false)
+
 
     return (
-        
+
         <label className={style.containerChackbox} htmlFor="">
-        <input 
-            type='checkbox' 
-            checked={checkboxEvent}
-            onChange={(event) => setCheckboxEvent(event.currentTarget.checked)} />
-       {text}
+            <input type='checkbox' {...props}/>
+            {text}
         </label>
-        
+
     )
-    
+
 }
 
