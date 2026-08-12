@@ -1,10 +1,10 @@
 import { Button } from "../Button";
-import penscilLine from '../../assets/pencil-line.svg'
-import trash from '../../assets/trash.svg'
 import { ListOfEmployee } from "../ListOfEmployee";
 import { FilterEmployee } from "../Filters";
 
 import style from "./style.module.css";
+import { DialogUI } from "../Dialog";
+import { Trigger } from "../Dialog/Trigger";
 
 type RegistersProps = {
   registration: string;
@@ -21,6 +21,7 @@ export function DataOfEmployee() {
         <h1 className={style.container}>
           Lista de funcionarios
         </h1>
+        <DialogUI/>
         <Button url="/Cadastrar-novo-funcionario"  types={'button'} content={'Novo Funcionario'} />
       </div>
       <div className={style.containerTable}>
@@ -42,12 +43,7 @@ export function DataOfEmployee() {
                   <td>{name}</td>
                   <td>{loging}</td>
                   <td className={style.buttons} >
-                    <button>
-                      <img src={penscilLine} alt="Icone para editar" />
-                    </button>
-                    <button>
-                      <img src={trash} alt="Icone para excluir" />
-                    </button>
+                   <Trigger/>
                   </td>
                 </tr>
               ),

@@ -1,0 +1,17 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+  
+    background-color: var(--grey-400);
+  
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+.content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
+}

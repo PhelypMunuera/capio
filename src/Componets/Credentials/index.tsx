@@ -1,5 +1,5 @@
 
-import { Login } from '../Form'
+import { Login } from '../LoginForm'
 import style from './style.module.css'
 
 

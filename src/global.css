@@ -12,6 +12,7 @@
   --grey-100: #bebfca;
   --grey-200: #9c9eb1;
   --grey-300: #8d8dac;
+  --grey-400: rgba(73, 73, 110, 0.5);
 
   --blue-100: #d9e5f7;
   --blue-200: #426fb6;
@@ -21,6 +22,10 @@
 
   --red-200: #ffa2a2;
   --green-200: #97c994;
+}
+
+#root {
+  isolation: isolate;
 }
 
 body {

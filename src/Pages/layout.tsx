@@ -10,7 +10,7 @@ import { Outlet } from "react-router-dom";
 
 export function Layout()  {
   return (
-    <div className='layoutGrid'>
+     <div id="root" className='layoutGrid'>
       <Header name="Phelyp Munuera" />
       <main>
         <Outlet />
