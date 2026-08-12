@@ -19,7 +19,7 @@
 
     th {
       white-space: nowrap;
-      padding: 1rem .5rem;
+      padding: 1rem 2.5rem;
       text-align: left;
       border-collapse: collapse;
       cursor: pointer;
@@ -37,7 +37,7 @@
     td {
       color: var(--black);
       font-size: .75rem;
-      padding: .5rem;
+      padding: .5rem 2.5rem;
       text-align: left;
       border-bottom: 1px solid var(--grey-100);
     }
